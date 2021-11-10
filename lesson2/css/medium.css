@@ -1,0 +1,36 @@
+@media only screen and (min-width: 37.5em) {
+	header{
+		display: grid;
+		grid-template-columns: repeat(2, auto);
+		grid-column-gap: 50px;
+		align-items: center;
+	}
+	img {
+		width: 50%;
+		height: auto;
+	}
+	h1 { font-size: 1.5rem;}
+	
+	/* Horizontal Menu Examples */
+	/* Flex *********************/
+ 		nav ul { display: flex; }
+		nav ul li { flex: 1 1 auto; }
+	
+
+	p{
+		font-family: 'Linden Hill', serif;
+		font-size: 20px;
+		max-width: 600px;
+		text-align: justify;
+		margin-left: 60px;
+	
+	}
+		
+	nav a {
+		font-size: 1rem;
+	}
+
+	article:nth-child(3) {
+		grid-column: span 2;
+	}
+}
