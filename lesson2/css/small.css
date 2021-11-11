@@ -2,7 +2,8 @@
 body {
 	font-size: 16px;
 
-}header,
+}
+header,
 footer {
 	background-color: #daa46d;
 	display: flex;
@@ -15,7 +16,6 @@ img{
 	filter: brightness(1.1);
 	mix-blend-mode: multiply;
 }
-
 header,
 nav,
 main,
@@ -24,7 +24,7 @@ footer {
 	margin: 0 auto;
 	font-family: 'Merriweather', serif;
 }
-}
+
 h1 {
 	font-size: 1.1rem;
 	font-family: 'Merriweather', serif;
@@ -41,6 +41,27 @@ p{
 	text-align: justify;
 	margin-left: 60px;
 
+}
+table{
+	margin-left: 40px;
+	margin-bottom: 20px;
+	max-width: 250px;
+}
+
+#first{
+	background-color: #9c4f20;
+	text-align: center;
+	border: 0.5px solid black;
+}
+#second{
+	background-color: #fbe1b6;
+	text-align: center;
+	border: 0.5px solid black;
+}
+#third{
+	background-color: #daa46d;
+	text-align: center;
+	border: 0.5px solid black;
 }
 
 nav {
