@@ -1,11 +1,39 @@
-let options = {
-    day: "numeric",
-    month: "long",
-    year: "numeric"
-};
+let current = new Date()
 
+const months = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December'
+]
+
+const days = [
+  'Sunday',
+  'Monday',
+  'Tuesday',
+  'Wednesday',
+  'Thursday',
+  'Friday',
+  'Saturday'
+]
+
+let last = document.lastModified;
+let day = current.getDay();
+let month = current.getMonth();
+let year = current.getFullYear();
+
+
+let str = days[day] + ", "+ day + " " + months[month] + " " + year
 // shows when document was last modified
-document.getElementById("lastUpdated").textContent = document.lastModified;
+document.getElementById("lastUpdated").textContent = str;
 
 // shows current year for copyright
 document.getElementById("currentYear").textContent = new Date().getFullYear();
